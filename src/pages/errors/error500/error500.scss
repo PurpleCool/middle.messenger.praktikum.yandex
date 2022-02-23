@@ -1,0 +1,15 @@
+@import '../../../global.scss';
+
+.error {
+    min-width: 30%;
+    min-height: 30%;
+    width: max-content;
+    height: max-content;
+    margin: auto;
+    border: $containerBorderWidth solid $themeColor;
+    border-radius: $containerBorderRadius;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
