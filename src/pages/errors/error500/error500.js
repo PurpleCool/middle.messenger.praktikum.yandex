@@ -4,9 +4,10 @@ import '../../../partials/button';
 import '../../../helpers/button';
 import './error500.scss';
 import '../../../global.scss';
+import '../../../partials/floatingContainer'
 
 document.addEventListener('DOMContentLoaded', () => {
-    let compiled = Handlebars.compile(template);
+    let compiledError500 = Handlebars.compile(template);
 
     let data = {
         status: '500',
@@ -16,6 +17,11 @@ document.addEventListener('DOMContentLoaded', () => {
         // buttonText: 'oolala'
     };
 
-    let html = compiled(data);
-    document.getElementById('app').innerHTML = html;
+    let htmlError500 = compiledError500(data);
+
+    let compiledFloatingContainer = Handlebars.compile('{{> floatingContainer }}');
+
+    let htmlContainer = compiledFloatingContainer({ floatingContainer: htmlError500 })
+
+    document.getElementById('app').innerHTML = htmlContainer;
 });
