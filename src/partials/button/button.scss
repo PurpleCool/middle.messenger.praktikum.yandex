@@ -8,3 +8,7 @@
     font-size: 16px;
     color: $tertiaryFontColor;
 }
+
+.button-primary:active {
+    opacity: 0.75;
+}
