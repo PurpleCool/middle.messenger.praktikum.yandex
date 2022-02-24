@@ -1,10 +1,7 @@
 import Handlebars from 'handlebars';
 import template from './error404.tmpl';
-import '../../../partials/button';
-import '../../../helpers/button';
 import './error404.scss';
-import '../../../global.scss';
-import '../../../partials/floatingContainer'
+import '../../partials/floatingContainer'
 
 document.addEventListener('DOMContentLoaded', () => {
     let compiledError404 = Handlebars.compile(template);

@@ -1,10 +1,7 @@
 import Handlebars from 'handlebars';
 import template from './error500.tmpl';
-import '../../../partials/button';
-import '../../../helpers/button';
 import './error500.scss';
-import '../../../global.scss';
-import '../../../partials/floatingContainer'
+import '../../partials/floatingContainer'
 
 document.addEventListener('DOMContentLoaded', () => {
     let compiledError500 = Handlebars.compile(template);
@@ -14,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
         title: "Ошибка сервера",
         catLink: 'https://http.cat/500',
         goBackLink: "Назад к чатам",
-        // buttonText: 'oolala'
     };
 
     let htmlError500 = compiledError500(data);
