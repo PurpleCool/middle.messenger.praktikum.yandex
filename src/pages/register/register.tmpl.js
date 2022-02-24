@@ -2,6 +2,7 @@
 
 export default `
     <h1 class='login-title'>{{title}}</h1>
+    
     <label for="email">Почта</label>
     <input type="email" id="email">
  

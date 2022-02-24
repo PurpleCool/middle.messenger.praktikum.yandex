@@ -1,0 +1,13 @@
+@import '../../global.scss';
+
+label {
+    min-width: 400px;
+    width: min-content;
+}
+
+label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;;
+}

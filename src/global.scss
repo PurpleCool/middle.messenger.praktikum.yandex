@@ -21,7 +21,6 @@ body {
     // align-content: center;
 }
 
-
 label {
     align-self: flex-start;
     color: $secondaryFontColor;
@@ -33,9 +32,26 @@ input {
     outline: 0;
     font-size:16px;
     padding: 5px 0;
+    
+    &:focus {
+        outline:none!important;
+    }
 }
 
-input:focus {outline:none!important;}
+
+.wrapper__s {
+    padding: 5px 0;
+}
+
+.wrapper__m {
+    padding: 10px 0;
+}
+
+.wrapper__l {
+    padding: 20px 0;
+}
+
+
 
 // .layout {
 //     position: relative;
