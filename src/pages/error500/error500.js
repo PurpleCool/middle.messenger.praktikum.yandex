@@ -3,7 +3,7 @@ import template from './error500.tmpl';
 import './error500.scss';
 import '../../partials/floatingContainer'
 
-document.addEventListener('DOMContentLoaded', () => {
+export default () => {
     let compiledError500 = Handlebars.compile(template);
 
     let data = {
@@ -19,5 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let htmlContainer = compiledFloatingContainer({ floatingContainer: htmlError500 })
 
-    document.getElementById('app').innerHTML = htmlContainer;
-});
+    return htmlContainer;
+};
+
+// let page = getPageHtml()
+
+// export default page;

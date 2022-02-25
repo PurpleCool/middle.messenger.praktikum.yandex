@@ -1,11 +1,11 @@
 {
-  "name": "test",
+  "name": "middle.messenger.praktikum.yandex",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "dev": "parcel --no-cache index.hbs",
-    "build": "parcel build index.hbs"
+    "dev": "parcel --no-cache static/index.html",
+    "build": "parcel build static/index.html"
   },
   "keywords": [],
   "author": "",
@@ -13,11 +13,13 @@
   "devDependencies": {
     "@anikin/parcel-transformer-handlebars": "^1.0.9",
     "@parcel/transformer-sass": "^2.3.2",
+    "express": "^4.17.3",
     "parcel-bundler": "^1.12.5",
     "sass": "^1.49.8"
   },
   "dependencies": {
     "handlebars": "^4.7.7",
+    "parcel-bundler": "^1.12.5",
     "parcel": "^2.0.0"
   }
 }
