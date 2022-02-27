@@ -4,19 +4,19 @@ export default `
     <img src='{{{imageSrc}}}'>
 
     <div class="wrapper__l">
-        <label for="old-password">
+        <label for="oldPassword">
             Старый пароль
-            <input type="password" id="old-password">
+            <input type="password" id="oldPassword" name="oldPassword">
         </label>
 
-        <label for="new-password">
+        <label for="newPassword">
             Новый пароль
-            <input type="password" id="new-password">
+            <input type="password" id="newPassword" name="newPassword">
         </label>
 
-        <label for="new-password-confirm">
+        <label for="passwordConfirm">
             Повторите новый пароль
-            <input type="password" id="new-password-confirm">
+            <input type="password" id="passwordConfirm" name="passwordConfirm">
         </label>
 
         

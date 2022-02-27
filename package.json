@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "src/index.js",
+  "engines": {
+    "node": ">=12"
+  },
   "scripts": {
     "dev": "parcel --no-cache static/index.html",
     "build": "parcel build static/index.html",

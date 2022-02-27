@@ -10,7 +10,7 @@ export default () => {
 
     let data = {
         title: "Регистрация",
-        buttonText: 'Зарегистрироваться',
+        buttonText: 'Создать аккаунт',
         buttonSecondaryText: 'Войти',
     };
 

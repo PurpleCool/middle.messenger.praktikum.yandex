@@ -8,7 +8,7 @@ export default () => {
 
     let data = {
         status: '404',
-        title: "Ошибка сервера",
+        title: "Страница не найдена",
         catLink: 'https://http.cat/404',
         goBackLink: "Назад к чатам",
     };
