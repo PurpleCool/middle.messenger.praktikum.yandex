@@ -2,7 +2,14 @@ import Handlebars from 'handlebars';
 import template from './routesList.tmpl';
 import './routesList.scss';
 import '../../partials/floatingContainer'
-import { ERROR_404, ERROR_500, LOGIN, REGISTER, PROFILE, CHANGE_PASSWORD } from '../../const/routes';
+import { 
+    ERROR_404,
+    ERROR_500,
+    LOGIN, REGISTER,
+    PROFILE,
+    CHANGE_PASSWORD,
+    INSTANT_MESSENGER,
+} from '../../const/routes';
 
 export default () => {
     let compiled = Handlebars.compile(template);
@@ -31,6 +38,10 @@ export default () => {
         {
             href: CHANGE_PASSWORD,
             title: "Сменить пароль",
+        },
+        {
+            href: INSTANT_MESSENGER,
+            title: "Чаты",
         },
       ];
 

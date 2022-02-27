@@ -1,0 +1,19 @@
+@import '../../global.scss';
+
+.container {
+    display: flex;
+    gap: $containerGap;
+    width: 100%;
+
+    .container__sidebar {
+        width: 30%;
+        overflow: auto;
+        height: 100%;
+    }
+    
+    .container__main {
+        flex: 1;
+        overflow: auto;
+        height: 100%;
+    }
+}

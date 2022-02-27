@@ -4,7 +4,7 @@ import './error404.scss';
 import '../../partials/floatingContainer'
 
 export default () => {
-    let compiledError404 = Handlebars.compile(template);
+    let compiled = Handlebars.compile(template);
 
     let data = {
         status: '404',
@@ -13,10 +13,9 @@ export default () => {
         goBackLink: "Назад к чатам",
     };
 
-    let htmlError404 = compiledError404(data);
+    let html = compiled(data);
 
     let compiledFloatingContainer = Handlebars.compile('{{> floatingContainer }}');
-
-    let htmlContainer = compiledFloatingContainer({ floatingContainer: htmlError404 })
+    let htmlContainer = compiledFloatingContainer({ floatingContainer: html })
     return htmlContainer;
 };

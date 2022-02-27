@@ -6,20 +6,17 @@ import './login.scss';
 import '../../partials/floatingContainer'
 
 export default () => {
-    let compiledLogin = Handlebars.compile(template);
+    let commpiled = Handlebars.compile(template);
 
     let data = {
         title: "Вход",
-        buttonText: 'Авторизоваться',
+        buttonText: 'Войти',
         buttonSecondaryText: 'Нет аккаунта?',
     };
 
-    let htmlLogin = compiledLogin(data);
+    let html = commpiled(data);
 
     let compiledFloatingContainer = Handlebars.compile('{{> floatingContainer }}');
-
-    let htmlContainer = compiledFloatingContainer({ floatingContainer: htmlLogin })
-
+    let htmlContainer = compiledFloatingContainer({ floatingContainer: html })
     return htmlContainer;
-    // document.getElementById('app').innerHTML = htmlContainer;
 };

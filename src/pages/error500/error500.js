@@ -4,7 +4,7 @@ import './error500.scss';
 import '../../partials/floatingContainer'
 
 export default () => {
-    let compiledError500 = Handlebars.compile(template);
+    let compiled = Handlebars.compile(template);
 
     let data = {
         status: '500',
@@ -13,10 +13,9 @@ export default () => {
         goBackLink: "Назад к чатам",
     };
 
-    let htmlError500 = compiledError500(data);
+    let html = compiled(data);
 
     let compiledFloatingContainer = Handlebars.compile('{{> floatingContainer }}');
-
-    let htmlContainer = compiledFloatingContainer({ floatingContainer: htmlError500 })
+    let htmlContainer = compiledFloatingContainer({ floatingContainer: html })
     return htmlContainer;
 };

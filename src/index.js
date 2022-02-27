@@ -5,8 +5,17 @@ import getLogIn from "./pages/login/login";
 import getRegister from "./pages/register/register";
 import getProfile from "./pages/profile/profile";
 import getChangePassword from "./pages/changePassword/changePassword";
+import getIM from "./pages/instantMessenger/instantMessenger";
 
-import { ERROR_404, ERROR_500, ROUTES_LIST, LOGIN, REGISTER, PROFILE, CHANGE_PASSWORD } from './const/routes';
+import { 
+    ERROR_404,
+    ERROR_500,
+    ROUTES_LIST,
+    LOGIN, REGISTER,
+    PROFILE,
+    CHANGE_PASSWORD,
+    INSTANT_MESSENGER
+ } from './const/routes';
 
 import "./global.scss";
 
@@ -18,6 +27,7 @@ const routes = {
     [REGISTER]: getRegister,
     [PROFILE]: getProfile,
     [CHANGE_PASSWORD]: getChangePassword,
+    [INSTANT_MESSENGER]: getIM,
 }
 
 const app = document.getElementById("app");
