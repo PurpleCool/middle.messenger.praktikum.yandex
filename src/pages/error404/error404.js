@@ -18,7 +18,5 @@ export default () => {
     let compiledFloatingContainer = Handlebars.compile('{{> floatingContainer }}');
 
     let htmlContainer = compiledFloatingContainer({ floatingContainer: htmlError404 })
-
     return htmlContainer;
-    // document.getElementById('app').innerHTML = htmlContainer;
 };

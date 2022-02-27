@@ -1,7 +1,7 @@
 import Handlebars from 'handlebars';
-import template from './profile.tmpl';
+import template from './changePassword.tmpl';
 import '../../partials/button';
-import './profile.scss';
+import './changePassword.scss';
 import '../../partials/floatingContainer';
 import avatar from '../../../static/avatar.svg';
 

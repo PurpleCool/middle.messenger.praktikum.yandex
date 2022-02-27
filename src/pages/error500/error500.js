@@ -18,10 +18,5 @@ export default () => {
     let compiledFloatingContainer = Handlebars.compile('{{> floatingContainer }}');
 
     let htmlContainer = compiledFloatingContainer({ floatingContainer: htmlError500 })
-
     return htmlContainer;
 };
-
-// let page = getPageHtml()
-
-// export default page;

@@ -17,13 +17,12 @@ body {
 
 #app {
     display: flex;
-    // justify-content: center;
-    // align-content: center;
 }
 
 label {
     align-self: flex-start;
     color: $secondaryFontColor;
+    white-space: nowrap;
 }
 
 input {

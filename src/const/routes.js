@@ -4,3 +4,4 @@ export const ERROR_500    = '/500';
 export const LOGIN        = '/login';
 export const REGISTER     = '/register';
 export const PROFILE      = '/profile';
+export const CHANGE_PASSWORD      = '/change_password';

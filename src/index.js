@@ -4,8 +4,9 @@ import getError404 from "./pages/error404/error404";
 import getLogIn from "./pages/login/login";
 import getRegister from "./pages/register/register";
 import getProfile from "./pages/profile/profile";
+import getChangePassword from "./pages/changePassword/changePassword";
 
-import { ERROR_404, ERROR_500, ROUTES_LIST, LOGIN, REGISTER, PROFILE } from './const/routes';
+import { ERROR_404, ERROR_500, ROUTES_LIST, LOGIN, REGISTER, PROFILE, CHANGE_PASSWORD } from './const/routes';
 
 import "./global.scss";
 
@@ -16,6 +17,7 @@ const routes = {
     [LOGIN]: getLogIn,
     [REGISTER]: getRegister,
     [PROFILE]: getProfile,
+    [CHANGE_PASSWORD]: getChangePassword,
 }
 
 const app = document.getElementById("app");

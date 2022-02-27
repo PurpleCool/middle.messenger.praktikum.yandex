@@ -2,7 +2,7 @@ import Handlebars from 'handlebars';
 import template from './routesList.tmpl';
 import './routesList.scss';
 import '../../partials/floatingContainer'
-import { ERROR_404, ERROR_500, LOGIN, REGISTER, PROFILE } from '../../const/routes';
+import { ERROR_404, ERROR_500, LOGIN, REGISTER, PROFILE, CHANGE_PASSWORD } from '../../const/routes';
 
 export default () => {
     let compiled = Handlebars.compile(template);
@@ -28,12 +28,15 @@ export default () => {
             href: PROFILE,
             title: "Профиль",
         },
+        {
+            href: CHANGE_PASSWORD,
+            title: "Сменить пароль",
+        },
       ];
 
     let html = compiled(links);
 
     let compiledFloatingContainer = Handlebars.compile('{{> floatingContainer }}');
     let htmlContainer = compiledFloatingContainer({ floatingContainer: html });
-
     return htmlContainer;
 };
