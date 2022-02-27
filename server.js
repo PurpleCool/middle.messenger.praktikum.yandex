@@ -4,6 +4,7 @@ const Bundler = require("parcel-bundler");
 const PORT = 3000;
 
 const app = express();
+// const app = express.static();
 
 const bundler = new Bundler("./static/index.html", { watch: true, cache: false });
 
@@ -13,6 +14,7 @@ app.listen(PORT, function () {
   console.log(`listening on: http://localhost:${PORT}`);
 });
 
+// --------------------------------------------------------------------------------
 // const express = require('express');
 // const path = require('path');
 // const serveStatic = require('serve-static');
@@ -24,3 +26,4 @@ app.listen(PORT, function () {
 // app.listen(PORT, function () {
 //   console.log(`listening on: http://localhost:${PORT}`);
 // });
+// -----------------------------------------------------------------------

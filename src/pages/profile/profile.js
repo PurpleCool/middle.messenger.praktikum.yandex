@@ -2,14 +2,15 @@ import Handlebars from 'handlebars';
 import template from './profile.tmpl';
 import '../../partials/button';
 import './profile.scss';
-import '../../partials/floatingContainer'
+import '../../partials/floatingContainer';
+import avatar from '../../../static/avatar.svg';
 
-document.addEventListener('DOMContentLoaded', () => {
+export default () => {
     let compiledLogin = Handlebars.compile(template);
 
     let data = {
         buttonText: 'Сохранить',
-        imageSrc: '../../../static/avatar.svg',
+        imageSrc: avatar,
     };
 
     let htmlLogin = compiledLogin(data);
@@ -18,5 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let htmlContainer = compiledFloatingContainer({ floatingContainer: htmlLogin })
 
-    document.getElementById('app').innerHTML = htmlContainer;
-});
+    return htmlContainer;
+    // document.getElementById('app').innerHTML = htmlContainer;
+};

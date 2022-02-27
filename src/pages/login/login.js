@@ -5,7 +5,7 @@ import '../../partials/buttonSecondary';
 import './login.scss';
 import '../../partials/floatingContainer'
 
-document.addEventListener('DOMContentLoaded', () => {
+export default () => {
     let compiledLogin = Handlebars.compile(template);
 
     let data = {
@@ -20,5 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let htmlContainer = compiledFloatingContainer({ floatingContainer: htmlLogin })
 
-    document.getElementById('app').innerHTML = htmlContainer;
-});
+    return htmlContainer;
+    // document.getElementById('app').innerHTML = htmlContainer;
+};

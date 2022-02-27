@@ -3,7 +3,7 @@ import template from './error404.tmpl';
 import './error404.scss';
 import '../../partials/floatingContainer'
 
-document.addEventListener('DOMContentLoaded', () => {
+export default () => {
     let compiledError404 = Handlebars.compile(template);
 
     let data = {
@@ -19,5 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let htmlContainer = compiledFloatingContainer({ floatingContainer: htmlError404 })
 
-    document.getElementById('app').innerHTML = htmlContainer;
-});
+    return htmlContainer;
+    // document.getElementById('app').innerHTML = htmlContainer;
+};
