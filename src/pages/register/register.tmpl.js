@@ -19,10 +19,10 @@ export default `
     <input type="tel" id="phone" name="phone">
     
     <label for="password">Пароль</label>
-    <input type="password" id="password">
-    
-    <label for="password">Пароль (ещё раз)</label>
     <input type="password" id="password" name="password">
+    
+    <label for="passwordConfirm">Пароль (ещё раз)</label>
+    <input type="password" id="passwordConfirm" name="passwordConfirm">
     
     {{> button }}
     {{> buttonSecondary }}
