@@ -9,6 +9,11 @@ const bundler = new Bundler("static/index.html", { watch: true, cache: false });
 
 app.use(bundler.middleware());
 
+
+app.get("*",function(req,res,next){
+  res.sendFile(__dirname + 'static/index.html');
+})
+
 app.listen(PORT, function () {
   console.log(`listening on: http://localhost:${PORT}`);
 });
