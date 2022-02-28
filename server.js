@@ -5,7 +5,7 @@ const PORT = 3000;
 
 const app = express();
 
-const bundler = new Bundler("./static/index.html", { watch: true, cache: false });
+const bundler = new Bundler("static/index.html", { watch: true, cache: false });
 
 app.use(bundler.middleware());
 
