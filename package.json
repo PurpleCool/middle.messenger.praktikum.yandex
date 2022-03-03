@@ -8,9 +8,9 @@
   },
   "scripts": {
     "dev": "parcel --no-cache static/index.html",
-    "start": "npm run build && node ./server.js",
+    "start": "npm i && npm run build && node ./server.js",
     "clean": "rm -rf dist/",
-    "build": "npm run clean && parcel build static/index.html"
+    "build": "npm i && npm run clean && parcel build static/index.html"
   },
   "targets": {
     "web": {
