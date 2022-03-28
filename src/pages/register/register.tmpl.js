@@ -3,26 +3,26 @@
 export default `
     <h1 class='login-title'>{{title}}</h1>
     
-    <label for="email">Почта</label>
-    <input type="email" id="email" name="email">
+    <label class="label-flex" for="email">Почта</label>
+    <input class="input-flex" type="email" id="email" name="email">
  
-    <label for="login">Логин</label>
-    <input type="text" id="login" name="login">
+    <label class="label-flex" for="login">Логин</label>
+    <input class="input-flex" type="text" id="login" name="login">
    
-    <label for="first_name">Имя</label>
-    <input type="text" id="first_name" name="first_name">
+    <label class="label-flex" for="first_name">Имя</label>
+    <input class="input-flex" type="text" id="first_name" name="first_name">
 
-    <label for="second_name">Фамилия</label>
-    <input type="text" id="second_name" name="second_name">
+    <label class="label-flex" for="second_name">Фамилия</label>
+    <input class="input-flex" type="text" id="second_name" name="second_name">
     
-    <label for="phone">Телефон</label>
-    <input type="tel" id="phone" name="phone">
+    <label class="label-flex" for="phone">Телефон</label>
+    <input class="input-flex" type="tel" id="phone" name="phone">
     
-    <label for="password">Пароль</label>
-    <input type="password" id="password" name="password">
+    <label class="label-flex" for="password">Пароль</label>
+    <input class="input-flex" type="password" id="password" name="password">
     
-    <label for="passwordConfirm">Пароль (ещё раз)</label>
-    <input type="password" id="passwordConfirm" name="passwordConfirm">
+    <label class="label-flex" for="passwordConfirm">Пароль (ещё раз)</label>
+    <input class="input-flex" type="password" id="passwordConfirm" name="passwordConfirm">
     
     {{> button }}
     {{> buttonSecondary }}

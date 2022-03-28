@@ -4,34 +4,34 @@ export default `
     <img src='{{{imageSrc}}}' name="avatar">
 
     <div class="wrapper__l">
-        <label for="email">
+        <label class="label-flex" for="email">
             Почта
-            <input type="email" id="email" value="pochta@yandex.ru" name="email">
+            <input class="input-flex" type="email" id="email" value="pochta@yandex.ru" name="email">
         </label>
 
-        <label for="login">
+        <label class="label-flex" for="login">
             Логин
-            <input type="text" id="login" value="ivanivanov" name="login">
+            <input class="input-flex" type="text" id="login" value="ivanivanov" name="login">
         </label>
     
-        <label for="first_name">
+        <label class="label-flex" for="first_name">
             Имя
-            <input type="text" id="first_name" value="Иван" name="first_name">
+            <input class="input-flex" type="text" id="first_name" value="Иван" name="first_name">
         </label>
 
-        <label for="second_name">
+        <label class="label-flex" for="second_name">
             Фамилия
-            <input type="text" id="second_name" value="Иванов" name="second_name">
+            <input class="input-flex" type="text" id="second_name" value="Иванов" name="second_name">
         </label>
 
-        <label for="display_name">
+        <label class="label-flex" for="display_name">
             Имя в чате
-            <input type="text" id="display_name" value="Иванушка" name="display_name">
+            <input class="input-flex" type="text" id="display_name" value="Иванушка" name="display_name">
         </label>
         
-        <label for="phone">
+        <label class="label-flex" for="phone">
             Телефон
-            <input type="tel" id="phone" value="+7 (909) 967 30 30" name="phone">
+            <input class="input-flex" type="tel" id="phone" value="+7 (909) 967 30 30" name="phone">
         </label>
     </div>
     

@@ -23,13 +23,13 @@ body {
     display: flex;
 }
 
-label {
+.label-flex {
     align-self: flex-start;
     color: $secondaryColor;
     white-space: nowrap;
 }
 
-input {
+.input-flex {
     align-self: flex-start;
     border: 0;
     outline: 0;

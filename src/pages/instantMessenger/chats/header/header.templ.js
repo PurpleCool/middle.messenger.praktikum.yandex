@@ -1,8 +1,8 @@
 export default `
 <header class="chats-header">
     <button class="chats-header__menu">
-        <img src="{{menuIcon}}" class="chats-header__menu-icon">
+        <img src="{{menuIcon}}" class="chats-header__menu-icon" alt="search icon">
     </button>
-    <input class="chats-header__search" type="text" placeholder="Поиск"/>
+    <input class="input-flex chats-header__search" type="text" placeholder="Поиск"/>
 </header>
 `;

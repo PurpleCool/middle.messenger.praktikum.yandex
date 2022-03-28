@@ -1,22 +1,22 @@
 // language=hbs
 
 export default `
-    <img src='{{{imageSrc}}}'>
+    <img src="{{{imageSrc}}}" alt="avatar">
 
     <div class="wrapper__l">
-        <label for="oldPassword">
+        <label class="label-flex" for="oldPassword">
             Старый пароль
-            <input type="password" id="oldPassword" name="oldPassword">
+            <input class="input-flex" type="password" id="oldPassword" name="oldPassword">
         </label>
 
-        <label for="newPassword">
+        <label class="label-flex" for="newPassword">
             Новый пароль
-            <input type="password" id="newPassword" name="newPassword">
+            <input class="input-flex" type="password" id="newPassword" name="newPassword">
         </label>
 
-        <label for="passwordConfirm">
+        <label class="label-flex" for="passwordConfirm">
             Повторите новый пароль
-            <input type="password" id="passwordConfirm" name="passwordConfirm">
+            <input class="input-flex" type="password" id="passwordConfirm" name="passwordConfirm">
         </label>
 
         

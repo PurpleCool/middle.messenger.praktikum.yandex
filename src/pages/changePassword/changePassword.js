@@ -5,18 +5,16 @@ import './changePassword.scss';
 import '../../partials/floatingContainer';
 import avatar from '../../../static/avatar.svg';
 
-export default () => {
-    let compiledLogin = Handlebars.compile(template);
 
-    let data = {
+export default () => {
+    const compiledChangePassword = Handlebars.compile(template);
+    const data = {
         buttonText: 'Сохранить',
         imageSrc: avatar,
     };
-
-    let htmlLogin = compiledLogin(data);
-
-    let compiledFloatingContainer = Handlebars.compile('{{> floatingContainer }}');
-
-    let htmlContainer = compiledFloatingContainer({ floatingContainer: htmlLogin })
+    
+    const htmlChangePassword = compiledChangePassword(data);
+    const compiledFloatingContainer = Handlebars.compile('{{> floatingContainer }}');
+    const htmlContainer = compiledFloatingContainer({ floatingContainer: htmlChangePassword })
     return htmlContainer;
 };

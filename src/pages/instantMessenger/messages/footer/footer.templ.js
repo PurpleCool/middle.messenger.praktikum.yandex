@@ -1,11 +1,11 @@
 export default `
 <footer class="messages-footer">
     <button class="messages-footer__attache-files">
-        <img src="{{attachFiles}}" class="messages-footer__attache-files-icon">
+        <img src="{{attachFiles}}" class="messages-footer__attache-files-icon" alt="attache files icon">
     </button>
-    <input class="messages-footer__input" type="text" name="message"/>
+    <input class="input-flex messages-footer__input" type="text" name="message"/>
     <button class="messages-footer__send-message">
-        <img src="{{sendMessage}}" class="messages-footer__send-message-icon">
+        <img src="{{sendMessage}}" class="messages-footer__send-message-icon" alt="send message icon">
     </button>
 </footer>
 `;

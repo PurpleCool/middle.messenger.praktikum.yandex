@@ -2,7 +2,6 @@
 
 .messages-layout {
     height: calc(100% - (2 * $containerBorderWidth));
-    // position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

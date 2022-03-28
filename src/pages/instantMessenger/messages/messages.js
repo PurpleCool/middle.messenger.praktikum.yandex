@@ -9,20 +9,19 @@ export default () => {
    
     let data = {
         header: getHeader(),
-        // header: '',
         footer: getFooter(),
         messages: [
             {
                 author: "Андрей",
-                text: "О-ля-ля, какие люди"
+                text: "О-ля-ля, какие люди",
             },
             {
                 author: null,
-                text: "Привет!"
+                text: "Привет!",
             },
             {
                 author: "Андрей",
-                text: "Привет!"
+                text: "Привет!",
             },
         ]
     };

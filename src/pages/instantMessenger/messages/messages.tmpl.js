@@ -6,7 +6,7 @@ export default `
     <section>
         <ul class='messages'>
             {{#each messages}}
-                <li class='message {{#if this.author}}message_outcoming{{else}}message_incoming{{/if}}'>
+                <li class='message message_{{#if this.author}}outcoming{{else}}incoming{{/if}}'>
                     <span>{{this.text}}</span>
                 </li>
             {{/each}}

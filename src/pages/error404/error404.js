@@ -1,7 +1,7 @@
 import Handlebars from 'handlebars';
 import template from './error404.tmpl';
 import './error404.scss';
-import '../../partials/floatingContainer'
+import '../../partials/floatingContainer';
 
 export default () => {
     let compiled = Handlebars.compile(template);
