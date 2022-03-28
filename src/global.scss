@@ -1,0 +1,59 @@
+@import './fonts.scss';
+@import './colors.scss';
+
+$containerBorderRadius: 20px;
+$containerBorderWidth: 5px;
+$containerGap: 5px;
+
+html, body, #root, #app {
+    width: 100vw;
+    height: 100vh;
+    & * {
+        box-sizing: border-box;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', 'sans-serif';
+    font-weight: 500;
+}
+
+#app {
+    display: flex;
+}
+
+.label-flex {
+    align-self: flex-start;
+    color: $secondaryColor;
+    white-space: nowrap;
+}
+
+.input-flex {
+    align-self: flex-start;
+    border: 0;
+    outline: 0;
+    font-size:16px;
+    padding: 5px 0;
+    
+    &:focus {
+        outline:none!important;
+    }
+}
+
+.wrapper__s {
+    padding: 5px 0;
+}
+
+.wrapper__m {
+    padding: 10px 0;
+}
+
+.wrapper__l {
+    padding: 20px 0;
+}
+
+.main-containter-theme {
+    border: $containerBorderWidth solid $themeColor;
+    border-radius: $containerBorderRadius;
+}

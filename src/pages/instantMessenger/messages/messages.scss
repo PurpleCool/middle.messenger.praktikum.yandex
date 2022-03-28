@@ -1,0 +1,35 @@
+@import '../../../global.scss';
+
+.messages-layout {
+    height: calc(100% - (2 * $containerBorderWidth));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+        
+    .messages {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;
+
+        .message {
+            max-width: 50%;
+            width: max-content;
+            padding: 10px;
+
+            &.message_outcoming {
+                background-color: $quaternaryColor;
+                border-radius: 10px 10px 10px 0;
+                align-self: flex-start;
+            }
+
+            &.message_incoming {
+                background-color: $themeColorFaded;
+                border-radius: 10px 10px 0 10px;
+                align-self: flex-end;
+            }
+        }
+    }
+
+}

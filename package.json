@@ -1,0 +1,34 @@
+{
+  "name": "middle.messenger.praktikum.yandex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=12"
+  },
+  "scripts": {
+    "dev": "parcel --no-cache static/index.html",
+    "start": "npm i && npm run build && node ./server.js",
+    "clean": "rm -rf dist/",
+    "build": "npm i && npm run clean && parcel build static/index.html"
+  },
+  "targets": {
+    "web": {
+      "context": "browser",
+      "publicUrl": "./",
+      "distDir": "dist"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.3.2",
+    "handlebars": "^4.7.7",
+    "express": "^4.17.3",
+    "sass": "^1.49.8",
+    "@anikin/parcel-transformer-handlebars": "^1.0.9",
+    "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,16 @@
+
+@import '../../global.scss';
+
+.floating-container {
+    min-width: 30%;
+    min-height: 30%;
+    width: max-content;
+    height: max-content;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2px 0;
+}

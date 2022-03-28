@@ -1,4 +1,5 @@
 [Ссылка на PR](https://github.com/PurpleCool/middle.messenger.praktikum.yandex/pull/11)
+
 ## Описание
 
 Самостоятельный проект курса "Миддл-фронтенд разработчик".
